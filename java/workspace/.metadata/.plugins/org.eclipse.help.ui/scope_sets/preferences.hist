@@ -1,0 +1,6 @@
+#Thu Mar 03 15:11:28 KST 2022
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=preferences

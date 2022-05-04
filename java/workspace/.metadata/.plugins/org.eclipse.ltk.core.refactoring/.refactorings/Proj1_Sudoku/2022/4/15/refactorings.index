@@ -1,0 +1,16 @@
+1649193484837	Rename local variable 'count'
+1649193504324	Rename local variable 'numZero'
+1649202277619	Copy compilation unit
+1649202854229	Copy compilation unit
+1649202948915	Rename compilation unit 'Sudoku3.java'
+1649203045604	Rename local variable 'prob'
+1649203429624	Rename method 'dfs'
+1649203469043	Rename method 'Printer'
+1649204163093	Rename type 'Main01'
+1649204175193	Copy compilation unit
+1649206415358	Rename method 'solver'
+1649206703710	Rename local variable 'value'
+1649207211069	Rename local variable 'ind_row'
+1649208401955	Copy compilation unit
+1649211715300	Rename field 'arr'
+1649220927795	Copy compilation unit

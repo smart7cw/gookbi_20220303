@@ -1,0 +1,118 @@
+------------------------------------------------------------
+1. 프로그래밍 언어
+ 1-1. 프로그래밍 언어란?
+  - 프로그래밍 언어 = 주어진 어떤 문제를 해결하기 위해 인간과 컴퓨터 사이에서
+    의사소통을 가능하게 하는 인공적인 언어
+  - 언어를 통해서 사용자는 컴퓨터에게 일련의 일을 시키는 명령어들의 집합체인
+  "프로그램"을 작성할 수 있다.
+ 
+  1-2. 프로그래밍 언어의 종류
+   - 기계어: 컴퓨터가 이해하는 언어. 2진수의 집합.
+   - 고급언어: 사람이 이해할 수 있는 수준의 언어. 기계어로 변환해야 실행 가능하다.
+     ex) C, C++, JAVA
+
+  1-3. JAVA <- ***취업 기술면접에 꼭 나옴!!!
+   - 운영체제에 독립적이다.
+	:JVM(자바 가상 머신)이 설치된 환경이라면 어디서든지 실행 가능하다.
+   - 객체 지향 언어**
+	: 상속, 다형성, 캡슐화
+	: 코드의 재사용 및 유지보수가 용이하다.
+   - 자동 메모리 관리
+	: Garbage Collector가 자동으로 메모리를 관리해준다.
+   - 네트워크, 분산처리, 멀티스레드
+	: 시스템과 관계없이 네트워크, 분산처리, 멀티스레드 구현을 위한 손쉬운
+	  API를 제공한다.
+
+  1-4. JVM
+   - 자바 가상 머신 (Java Virtual Machine)
+   - 컴파일된 자바 바이트 코드를 실행시켜주는 소프트웨어
+   - 자바 프로그램은 JVM만 설치되어 있으면 운영체제, 하드웨어에 종속되지 않고
+     실행 가능하다.
+   - 즉 윈도우에서 실행했던 프로그램을 리눅스에서도 동일하게 실행 가능하다.
+   ex) 소스코드파일(.java) -[JAVA 컴파일러]로 돌리면 -> 클래스파일(.class) 생성
+       클래스파일 +  JVM 만 있으면 어디서든 파일 실행 가능함 (JVM은 운영체제 위에 설치되므로 독립적)
+
+  1-5. JAVA 설치
+   - 자바 설치 여부 확인법
+	: winkey + R로 실행창
+		(+ notepad = 메모장 / + calc = 계산기)
+	  + cmd(명령어 창) + java -version > ~또는 배치 파일이 아닙니다 라고 뜨면 없는 거임
+   - 설치: https://www.oracle.com/java/technologies/downloads/#java8-windows 가서 java 8 설치하기
+
+  1-6. JRE
+   - 자바 실행 환경(Java Runtime Environment)
+   - JRE = JVM + Library Classes
+   - JVM이 자바 프로그램을 동작시키기 위해 필요한 라이브러리 파일들 + 기타 파일들.
+   - JRE는 JVM의 실행환경을 구현한 것 이라고 할 수 있다.
+ 
+  1-7. JDK
+   - 자바 개발 키트(Java Development Kit)
+   - JDK = JRE + Development Tools
+   - JDK는 JRE에다가 개발을 위해 필요한 도구(javac, java 등)을 포함한 것 이라고 할 수 있다.
+   - Tool이란 개발퍼포먼스(개발 완성 속도)를 결정시키는 도구들 (그림 수정시 그림판 vs. 포토샵의 차이)     
+   ex) 인텔리제이, 이클립스
+
+  1-8. Eclipse
+   - 설치법: https://www.eclipse.org/downloads/packages/release > photon > R Packages
+     > Eclipse IDE for Java EE Developers 설치
+	Eclipse 실행
+	실행후 사전준비
+	1. Window > show view 에서 Console 선택하기 (컴파일 성공 및 에러 사항 보여줌)
+	2. Window > Preferences > enc 검색
+	   Content Types 맨 아래 Default encoding UTF-8 입력하고 Update 눌러주기
+	   Workspace의 Text file encoding을 other 중 UTF-8로 바꾸고 apply 눌러주기
+	   나머지 보이는 CSS Files~JSP Files 모두 ISO 10646 ~ UTF-8) 으로 바꾸고 각각 Apply 눌러주기
+	   Preferences>Genreral>Editors>Text Editors > Show LINE numbers 체크돼있는지 확인
+ 	   위 과정 다 수행하면 Apply and Close 눌러주기
+
+	Project Exploer 창 우클릭 > New > project> JAVA > 프로젝트명 입력하고 finish
+	Remember my decision 선택 > no 클릭
+	프로젝트 펼치기 > src 우클릭 > class 클릭 > Name 대문자로 시작하게 입력 , public static~ 박스 선택 > Finish
+	Ctrl+Shift + +/-으로 글씨크기 조절
+
+  2. 주석
+   2-1. 주석문이란?
+    - 프로그램 소스코드 안에서 개발자의 필요에 따라 명시하는 설명문
+    - 주석은 프로그램으로 컴파일되지 않는다.
+    - 특정 명령문이 실행되지 않도록 차단하는 용도로 사용할 수 있다.
+
+   2-2. 주석문의 종류
+    - 한 줄만 처리하는 주석문
+         // 가 앞에 명시된 라인은 주석으로 인식됩니다.
+
+    - 여러줄을 처리하는 주석문
+          /*
+                이 사이 모든 라인이 주석으로 인식됩니다.
+          */
+
+  3. 단축키
+   - Ctrl + Shift + +/- :글자 크기 조절
+   - Ctrl + Space :제공하는 기능 나열, 방향키와 엔터로 선택)
+     (기능 +  .  :자동으로 나열. 방향키과 엔터로 선택)
+***- sysout 입력 + Ctrl + Space : System.out.println(); 자동완성
+***- Ctrl + M :소스코드 화면 확대/축소
+***- Ctrl + D :소스코드 1줄 삭제
+***- [Shift + 위/아래]->[Ctrl + D] :소스코드 n줄 삭제
+      - Shift + Home : 커서 있는 곳부터 맨 앞까지 1줄 선택 가능
+***- Ctrl + Shift + F :소스코드의 줄맞춤과 들여쓰기를 자동으로 처리 - 남한테 받은 들여쓰기 잘 안된 코드 사용에 유용
+***- Ctrl + Alt + 아래 : 현재 있는 소스코드 1줄 복사&아래에 붙여넣기 
+    - Ctrl + Z/Y : 기존 소스코드 원복/재원복
+    - Project Explorer 파일 선택 + F2 : 패키지/클래스 등 이름 변경
+    - 변수 옆에 커서 놓기 + Shift + Alt  + R : 동일 변수 일괄 수정. 이후 Enter로 종료.
+   - 다른 기능이 실행되는 경우! -> 이클립스 단축키 확인 및 설정하는 법 :https://happy-inside.tistory.com/75
+
+
+  4. 변수
+    - 변수 = 다양한 종류의 자료를 표현할 수 있는 값
+     일반적으로는 웹페이지에서 처리하고자 하는 "데이터" 에 해당된다.
+   
+   4-1. 자료형 (data type)
+    - 자료형, 데이터형 = 프로그래밍 언어에서 변수 종류를 구별하기 위한 만든 키워드.
+    - 자바의 자료형은 총 8가지가 있으며 이를 기본(Primitive)자료형이라고 한다.
+    ex) boolean / char / byte, short, int, long / float, double
+
+   4-2. 자료형이 가지는 의미
+    - 낭비되는 메모리공간을 최소한으로 만들기 위해 변수의 자료형을 나누며, 각 자료형은 크기가 다르다.
+    - 모든 변수는 컴퓨터의 메모리 영역에 생성되며, 메모리란 PC에 설치된 RAM을 의미한다.
+    - 4byte 크기의 변수 하나를 생성할 경우 RAM에서 동일 4byte를 사용하게 된다.
+    - 변수는 RAM 크기를 넘을 수 없으며, 용량을 넘어서면 OutOfMemory 에러가 발생한다.

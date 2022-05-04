@@ -1,0 +1,19 @@
+//문제1~12: collection framework 중의 하나인 arraylist를 사용해서 학생 관리를 하자.
+//1. java 프로젝트 생성하여(이름은 자유) arraylist package를 생성한다.(10) 
+ 
+package arraylist;
+
+
+
+//2. arraylist package안에 Student 클래스, main 메서드를 포함하고있는 클래스(이름은 자유)를 생성한다.(10) 
+public class Main01 {
+
+	public static void main(String[] args) {
+		Student s = new Student();
+		
+		s.phonenum = 01091428970;
+		
+		System.out.println(s.phonenum);
+	}
+
+}

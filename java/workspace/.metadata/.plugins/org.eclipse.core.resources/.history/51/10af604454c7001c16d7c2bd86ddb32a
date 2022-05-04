@@ -1,0 +1,10 @@
+package arraylist;
+
+//2. arraylist package안에 Student 클래스, main 메서드를 포함하고있는 클래스(이름은 자유)를 생성한다.(10) 
+public class Student {
+	//3. Student class에, 학생관리를 위한 학생이름, 휴대폰번호, 주소를 담을 접근제어 private 전역변수 3개만 생성한다.(10)
+	private String name;
+	private String phonenum;
+	private String address;
+	
+}
